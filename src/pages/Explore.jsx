@@ -7,6 +7,7 @@ const Explore = () => {
     window.scrollTo(0, 0);
   }, []);
     // FROM MAIN!!! DO NOT REMOVE
+    // Second Test
   return (
     <div id="wrapper">
       <div className="no-bottom no-top" id="content">
