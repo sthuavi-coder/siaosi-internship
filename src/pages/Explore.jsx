@@ -6,8 +6,7 @@ const Explore = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-    // FROM MAIN!!! DO NOT REMOVE
-    // Try Again!!!
+  
   return (
     <div id="wrapper">
       <div className="no-bottom no-top" id="content">

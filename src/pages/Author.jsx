@@ -12,7 +12,6 @@ const Author = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    // Test Merge
     async function fetchAuthorData() {
       const { data } = await axios.get(
         `https://us-central1-nft-cloud-functions.cloudfunctions.net/authors?author=${authorId}`,
