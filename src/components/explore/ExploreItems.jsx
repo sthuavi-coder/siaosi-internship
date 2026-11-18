@@ -6,7 +6,7 @@ import Skeleton from "../UI/Skeleton";
 
 const ExploreItems = () => {
   const [exploreData, setExploreData] = useState([]);
-  const [value, setValue] = useState('');
+  const [value, setValue] = useState("");
   const [visibleCount, setVisibleCount] = useState(8);
   const [loading, setLoading] = useState(true);
 
@@ -14,7 +14,6 @@ const ExploreItems = () => {
     async function fetchExploreData() {
       setLoading(true);
       setVisibleCount(8);
-
 
       const { data } = await axios.get(
         `https://us-central1-nft-cloud-functions.cloudfunctions.net/explore?filter=${value}`,
@@ -26,7 +25,7 @@ const ExploreItems = () => {
   }, [value]);
 
   function filterCards(event) {
-    setValue(event.target.value)
+    setValue(event.target.value);
   }
 
   return (
@@ -49,10 +48,10 @@ const ExploreItems = () => {
             <div
               key={item.id}
               className="d-item col-lg-3 col-md-6 col-sm-6 col-xs-12"
-              
               style={{ display: "block", backgroundSize: "cover" }}
+              
             >
-              <div className="nft__item" data-aos="flip-down">
+              <div className="nft__item" data-aos="fade-up">
                 <div className="author_list_pp">
                   <Link
                     to={`/author/${item.authorId}`}

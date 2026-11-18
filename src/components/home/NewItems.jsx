@@ -65,10 +65,7 @@ const NewItems = () => {
                         </Link>
                       </div>
 
-                      {item.expiryDate ? (
-                        <CountDown expiryDate={item.expiryDate} />
-                      ) : null}
-
+                      {item.expiryDate && <CountDown expiryDate={item.expiryDate} />}
                       <div className="nft__item_wrap">
                         <div className="nft__item_extra">
                           <div className="nft__item_buttons">
@@ -87,7 +84,6 @@ const NewItems = () => {
                             </div>
                           </div>
                         </div>
-
                         <Link to={`/item-details/${item.nftId}`}>
                           <img
                             src={item.nftImage}
