@@ -19,7 +19,7 @@ const Author = () => {
       setAuthors(data);
     }
     fetchAuthorData();
-  }, []);
+  }, [authorId]);
 
   return (
     <div id="wrapper">
